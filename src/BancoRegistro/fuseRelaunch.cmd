@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/TestBench_isim_beh.exe" -prj "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/TestBench_beh.prj" "work.TestBench" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro_isim_beh.exe" -prj "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro_beh.prj" "work.BancoRegistro" "work.glbl" 

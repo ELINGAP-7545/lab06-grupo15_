@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.xst" -ofn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.syr" 
+xst -intstyle ise -ifn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.xst" -ofn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 "BancoRegistro.ngc" BancoRegistro.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o BancoRegistro_map.ncd BancoRegistro.ngd BancoRegistro.pcf 
+par -w -intstyle ise -ol high -t 1 BancoRegistro_map.ncd BancoRegistro.ncd BancoRegistro.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml BancoRegistro.twx BancoRegistro.ncd -o BancoRegistro.twr BancoRegistro.pcf 
+xst -intstyle ise -ifn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.xst" -ofn "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.syr" 

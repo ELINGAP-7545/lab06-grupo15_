@@ -1,23 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    09:55:28 10/12/2019 
-// Design Name: 	 ferney alberto beltran
-// Module Name:    BancoRegistro 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module BancoRegistro #(      		 //   #( Parametros
          parameter BIT_ADDR = 2,  //   BIT_ADDR Número de bit para la dirección
          parameter BIT_DATO = 4,  //  BIT_DATO  Número de bit para el dato
@@ -52,11 +32,8 @@ always @(posedge clk) begin
      breg[addrW] <= datW;
   end
 
-
-
 initial begin
 //	$readmemh(RegFILE, breg);
 end
 
 endmodule
-

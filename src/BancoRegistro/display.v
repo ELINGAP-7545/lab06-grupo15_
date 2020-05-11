@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 module display(
     input [15:0] num,
     input clk,
