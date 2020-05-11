@@ -25,11 +25,11 @@ Una vez clone el repositorio, realice lo siguiente:
 
 	**Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
 
-![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/ban_reg.JPG)
+![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/schema_ban_reg.JPG)
 
 	**Simulacion testbench Banco de Registro
 
-
+![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/ban_reg.JPG)
 
 
 
