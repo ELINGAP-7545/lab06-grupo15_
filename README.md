@@ -18,6 +18,23 @@ Las documentación deben estar diligencia en el archivo README.md del repositori
 Una vez clone el repositorio, realice lo siguiente:
 
 
+## Desarrollo del laboratorio:
+
+## Bloque Banco de Registro
+
+
+	**Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
+
+![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab05-grupo15_/blob/master/images/ban_reg.JPG)
+
+	**Simulacion testbench suma
+
+![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab05-grupo15_/blob/master/Imagenes/tb_sum3b.JPG)
+
+
+
+
+
 ## Descipción 
 Se debe diseñar un banco de registro tal que:
 
