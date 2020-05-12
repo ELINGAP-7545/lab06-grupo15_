@@ -33,9 +33,6 @@ Una vez clone el repositorio, realice lo siguiente:
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/ban_reg.JPG)
 
 
-
-
-
 ## Descipción 
 Se debe diseñar un banco de registro tal que:
 
