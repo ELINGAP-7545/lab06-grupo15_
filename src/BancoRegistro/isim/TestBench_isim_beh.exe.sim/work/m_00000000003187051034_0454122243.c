@@ -23,6 +23,11 @@
 #endif
 static const char *ng0 = "D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro/BancoRegistro.v";
 static int ng1[] = {1, 0};
+static int ng2[] = {10, 0};
+static int ng3[] = {0, 0};
+static int ng4[] = {2, 0};
+static int ng5[] = {5, 0};
+static int ng6[] = {3, 0};
 
 
 
@@ -323,11 +328,145 @@ LAB13:    t46 = *((unsigned int *)t30);
 
 static void Initial_35_3(char *t0)
 {
+    char t3[8];
+    char t4[8];
+    char *t1;
+    char *t2;
+    char *t5;
+    char *t6;
+    char *t7;
+    char *t8;
+    char *t9;
+    char *t10;
+    char *t11;
+    char *t12;
+    unsigned int t13;
+    int t14;
+    char *t15;
+    unsigned int t16;
+    int t17;
+    int t18;
+    unsigned int t19;
+    unsigned int t20;
+    int t21;
+    int t22;
 
 LAB0:    xsi_set_current_line(35, ng0);
 
-LAB2:
+LAB2:    xsi_set_current_line(38, ng0);
+    t1 = ((char*)((ng2)));
+    t2 = (t0 + 3272);
+    t5 = (t0 + 3272);
+    t6 = (t5 + 72U);
+    t7 = *((char **)t6);
+    t8 = (t0 + 3272);
+    t9 = (t8 + 64U);
+    t10 = *((char **)t9);
+    t11 = ((char*)((ng3)));
+    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 32, 1);
+    t12 = (t3 + 4);
+    t13 = *((unsigned int *)t12);
+    t14 = (!(t13));
+    t15 = (t4 + 4);
+    t16 = *((unsigned int *)t15);
+    t17 = (!(t16));
+    t18 = (t14 && t17);
+    if (t18 == 1)
+        goto LAB3;
+
+LAB4:    xsi_set_current_line(39, ng0);
+    t1 = ((char*)((ng4)));
+    t2 = (t0 + 3272);
+    t5 = (t0 + 3272);
+    t6 = (t5 + 72U);
+    t7 = *((char **)t6);
+    t8 = (t0 + 3272);
+    t9 = (t8 + 64U);
+    t10 = *((char **)t9);
+    t11 = ((char*)((ng1)));
+    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 32, 1);
+    t12 = (t3 + 4);
+    t13 = *((unsigned int *)t12);
+    t14 = (!(t13));
+    t15 = (t4 + 4);
+    t16 = *((unsigned int *)t15);
+    t17 = (!(t16));
+    t18 = (t14 && t17);
+    if (t18 == 1)
+        goto LAB5;
+
+LAB6:    xsi_set_current_line(40, ng0);
+    t1 = ((char*)((ng5)));
+    t2 = (t0 + 3272);
+    t5 = (t0 + 3272);
+    t6 = (t5 + 72U);
+    t7 = *((char **)t6);
+    t8 = (t0 + 3272);
+    t9 = (t8 + 64U);
+    t10 = *((char **)t9);
+    t11 = ((char*)((ng4)));
+    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 32, 1);
+    t12 = (t3 + 4);
+    t13 = *((unsigned int *)t12);
+    t14 = (!(t13));
+    t15 = (t4 + 4);
+    t16 = *((unsigned int *)t15);
+    t17 = (!(t16));
+    t18 = (t14 && t17);
+    if (t18 == 1)
+        goto LAB7;
+
+LAB8:    xsi_set_current_line(41, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 3272);
+    t5 = (t0 + 3272);
+    t6 = (t5 + 72U);
+    t7 = *((char **)t6);
+    t8 = (t0 + 3272);
+    t9 = (t8 + 64U);
+    t10 = *((char **)t9);
+    t11 = ((char*)((ng6)));
+    xsi_vlog_generic_convert_array_indices(t3, t4, t7, t10, 2, 1, t11, 32, 1);
+    t12 = (t3 + 4);
+    t13 = *((unsigned int *)t12);
+    t14 = (!(t13));
+    t15 = (t4 + 4);
+    t16 = *((unsigned int *)t15);
+    t17 = (!(t16));
+    t18 = (t14 && t17);
+    if (t18 == 1)
+        goto LAB9;
+
+LAB10:
 LAB1:    return;
+LAB3:    t19 = *((unsigned int *)t3);
+    t20 = *((unsigned int *)t4);
+    t21 = (t19 - t20);
+    t22 = (t21 + 1);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, *((unsigned int *)t4), t22, 0LL);
+    goto LAB4;
+
+LAB5:    t19 = *((unsigned int *)t3);
+    t20 = *((unsigned int *)t4);
+    t21 = (t19 - t20);
+    t22 = (t21 + 1);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, *((unsigned int *)t4), t22, 0LL);
+    goto LAB6;
+
+LAB7:    t19 = *((unsigned int *)t3);
+    t20 = *((unsigned int *)t4);
+    t21 = (t19 - t20);
+    t22 = (t21 + 1);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, *((unsigned int *)t4), t22, 0LL);
+    goto LAB8;
+
+LAB9:    t19 = *((unsigned int *)t3);
+    t20 = *((unsigned int *)t4);
+    t21 = (t19 - t20);
+    t22 = (t21 + 1);
+    xsi_vlogvar_wait_assign_value(t2, t1, 0, *((unsigned int *)t4), t22, 0LL);
+    goto LAB10;
+
 }
 
 

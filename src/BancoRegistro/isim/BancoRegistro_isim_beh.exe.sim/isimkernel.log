@@ -2,12 +2,12 @@ Command line:
    BancoRegistro_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49632
+     -socket  49679
 
-Thu May 14 17:07:51 2020
+Thu May 14 17:39:32 2020
 
 
- Elaboration Time: 0.0312 sec
+ Elaboration Time: 0.0468 sec
 
  Current Memory Usage: 670.11 Meg
 
@@ -21,9 +21,9 @@ Thu May 14 17:07:51 2020
  Total Scalar Nets and Variables : 330
 Total Line Count : 24
 
- Total Simulation Time: 0.171601 sec
+ Total Simulation Time: 0.0624 sec
 
- Current Memory Usage: 984.682 Meg
+ Current Memory Usage: 670.11 Meg
 
-Thu May 14 17:08:31 2020
+Thu May 14 17:39:38 2020
 

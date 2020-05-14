@@ -6,8 +6,6 @@ module display(
 	 input rst
     );
 
-
-
 reg [3:0]bcd=0;
  
 BCDtoSSeg bcdtosseg(.BCD(bcd), .SSeg(sseg));

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.38 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.38 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: BancoRegistro.prj
 
@@ -117,7 +117,7 @@ Analyzing hierarchy for module <BancoRegistro> in library <work> with parameters
 	BIT_ADDR = "00000000000000000000000000000010"
 	BIT_DATO = "00000000000000000000000000000100"
 	NREG = "00000000000000000000000000000100"
-	RegFILE = "src/Reg16.men"
+	RegFILE = "srcReg16.men"
 
 
 =========================================================================
@@ -127,7 +127,7 @@ Analyzing top module <BancoRegistro>.
 	BIT_ADDR = 32'sb00000000000000000000000000000010
 	BIT_DATO = 32'sb00000000000000000000000000000100
 	NREG = 32'sb00000000000000000000000000000100
-	RegFILE = "src/Reg16.men"
+	RegFILE = "srcReg16.men"
 Module <BancoRegistro> is correct for synthesis.
  
 
@@ -140,10 +140,10 @@ Performing bidirectional port resolution...
 Synthesizing Unit <BancoRegistro>.
     Related source file is "BancoRegistro.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 4x4-bit dual-port RAM <Mram_breg> for signal <breg>.
-    Found 4x4-bit dual-port RAM <Mram_breg_ren> for signal <breg>.
+    Found 16-bit register for signal <breg>.
     Summary:
-	inferred   2 RAM(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
 Unit <BancoRegistro> synthesized.
 
 
@@ -151,8 +151,10 @@ Unit <BancoRegistro> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4x4-bit dual-port RAM                                 : 2
+# Registers                                            : 4
+ 4-bit register                                        : 4
+# Multiplexers                                         : 2
+ 4-bit 4-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -161,47 +163,14 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <BancoRegistro>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_breg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <RegWrite>      | high     |
-    |     addrA          | connected to signal <addrW>         |          |
-    |     diA            | connected to signal <datW>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
-    |     addrB          | connected to signal <addrRa>        |          |
-    |     doB            | connected to signal <datOutRa>      |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_breg_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to signal <RegWrite>      | high     |
-    |     addrA          | connected to signal <addrW>         |          |
-    |     diA            | connected to signal <datW>          |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 4-word x 4-bit                      |          |
-    |     addrB          | connected to signal <addrRb>        |          |
-    |     doB            | connected to signal <datOutRb>      |          |
-    -----------------------------------------------------------------------
-Unit <BancoRegistro> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4x4-bit dual-port distributed RAM                     : 2
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 8
 
 =========================================================================
 
@@ -220,7 +189,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
 =========================================================================
 
 =========================================================================
@@ -248,10 +220,11 @@ Design Statistics
 # IOs                              : 21
 
 Cell Usage :
-# BELS                             : 1
-#      GND                         : 1
-# RAMS                             : 8
-#      RAM16X1D                    : 8
+# BELS                             : 28
+#      LUT3                        : 20
+#      MUXF5                       : 8
+# FlipFlops/Latches                : 16
+#      FDE                         : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 19
@@ -264,10 +237,9 @@ Device utilization summary:
 
 Selected Device : 3s1600efg320-4 
 
- Number of Slices:                        0  out of  14752     0%  
- Number of 4 input LUTs:                 16  out of  29504     0%  
-    Number used as logic:                 0
-    Number used as RAMs:                 16
+ Number of Slices:                       17  out of  14752     0%  
+ Number of Slice Flip Flops:             16  out of  29504     0%  
+ Number of 4 input LUTs:                 20  out of  29504     0%  
  Number of IOs:                          21
  Number of bonded IOBs:                  20  out of    250     8%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -293,7 +265,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 8     |
+clk                                | BUFGP                  | 16    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -305,9 +277,9 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 2.470ns
-   Maximum output required time after clock: 5.593ns
-   Maximum combinational path delay: 6.201ns
+   Minimum input arrival time before clock: 3.826ns
+   Maximum output required time after clock: 5.834ns
+   Maximum combinational path delay: 6.867ns
 
 Timing Detail:
 --------------
@@ -315,47 +287,50 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 48 / 48
+  Total number of paths / destination ports: 64 / 32
 -------------------------------------------------------------------------
-Offset:              2.470ns (Levels of Logic = 1)
+Offset:              3.826ns (Levels of Logic = 2)
   Source:            addrW<0> (PAD)
-  Destination:       Mram_breg1 (RAM)
+  Destination:       breg_1_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: addrW<0> to Mram_breg1
+  Data Path: addrW<0> to breg_1_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            24   1.218   1.252  addrW_0_IBUF (addrW_0_IBUF)
-     RAM16X1D:A0               0.000          Mram_breg1
+     IBUF:I->O             4   1.218   0.762  addrW_0_IBUF (addrW_0_IBUF)
+     LUT3:I0->O            4   0.704   0.587  breg_1_and00001 (breg_1_and0000)
+     FDE:CE                    0.555          breg_1_0
     ----------------------------------------
-    Total                      2.470ns (1.218ns logic, 1.252ns route)
-                                       (49.3% logic, 50.7% route)
+    Total                      3.826ns (2.477ns logic, 1.349ns route)
+                                       (64.7% logic, 35.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 8 / 8
+  Total number of paths / destination ports: 32 / 8
 -------------------------------------------------------------------------
-Offset:              5.593ns (Levels of Logic = 1)
-  Source:            Mram_breg4 (RAM)
+Offset:              5.834ns (Levels of Logic = 3)
+  Source:            breg_0_3 (FF)
   Destination:       datOutRa<3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: Mram_breg4 to datOutRa<3>
+  Data Path: breg_0_3 to datOutRa<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAM16X1D:WCLK->DPO    1   1.901   0.420  Mram_breg4 (datOutRa_3_OBUF)
+     FDE:C->Q              2   0.591   0.526  breg_0_3 (breg_0_3)
+     LUT3:I1->O            1   0.704   0.000  mux3_4 (mux3_4)
+     MUXF5:I0->O           1   0.321   0.420  mux3_2_f5 (datOutRa_3_OBUF)
      OBUF:I->O                 3.272          datOutRa_3_OBUF (datOutRa<3>)
     ----------------------------------------
-    Total                      5.593ns (5.173ns logic, 0.420ns route)
-                                       (92.5% logic, 7.5% route)
+    Total                      5.834ns (4.888ns logic, 0.946ns route)
+                                       (83.8% logic, 16.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 16 / 8
+  Total number of paths / destination ports: 24 / 8
 -------------------------------------------------------------------------
-Delay:               6.201ns (Levels of Logic = 3)
+Delay:               6.867ns (Levels of Logic = 4)
   Source:            addrRa<0> (PAD)
   Destination:       datOutRa<3> (PAD)
 
@@ -363,24 +338,25 @@ Delay:               6.201ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.587  addrRa_0_IBUF (addrRa_0_IBUF)
-     RAM16X1D:DPRA0->DPO    1   0.704   0.420  Mram_breg1 (datOutRa_0_OBUF)
+     IBUF:I->O             8   1.218   0.932  addrRa_0_IBUF (addrRa_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  mux_3 (mux_3)
+     MUXF5:I1->O           1   0.321   0.420  mux_2_f5 (datOutRa_0_OBUF)
      OBUF:I->O                 3.272          datOutRa_0_OBUF (datOutRa<0>)
     ----------------------------------------
-    Total                      6.201ns (5.194ns logic, 1.007ns route)
-                                       (83.8% logic, 16.2% route)
+    Total                      6.867ns (5.515ns logic, 1.352ns route)
+                                       (80.3% logic, 19.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.26 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.95 secs
  
 --> 
 
-Total memory usage is 273840 kilobytes
+Total memory usage is 257520 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 
