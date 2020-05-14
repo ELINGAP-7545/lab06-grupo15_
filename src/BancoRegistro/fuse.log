@@ -10,8 +10,8 @@ Completed static elaboration
 Compiling module BancoRegistro
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 2 Verilog Units
 Built simulation executable D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro/BancoRegistro_isim_beh.exe
-Fuse Memory Usage: 28384 KB
-Fuse CPU Usage: 436 ms
+Fuse Memory Usage: 28400 KB
+Fuse CPU Usage: 452 ms

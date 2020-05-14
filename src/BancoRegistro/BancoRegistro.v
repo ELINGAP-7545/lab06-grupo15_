@@ -34,6 +34,12 @@ always @(posedge clk) begin
 
 initial begin
 //	$readmemh(RegFILE, breg);
+
+	breg[0] <=10;
+	breg[1] <=2;
+	breg[2] <=5;
+	breg[3] <=1;
+
 end
 
 endmodule
