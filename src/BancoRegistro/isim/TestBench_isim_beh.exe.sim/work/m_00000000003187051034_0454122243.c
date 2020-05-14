@@ -21,12 +21,12 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.v";
+static const char *ng0 = "D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro/BancoRegistro.v";
 static int ng1[] = {1, 0};
 
 
 
-static void Cont_47_0(char *t0)
+static void Cont_27_0(char *t0)
 {
     char t5[8];
     char *t1;
@@ -62,7 +62,7 @@ LAB0:    t1 = (t0 + 4192U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(47, ng0);
+LAB2:    xsi_set_current_line(27, ng0);
     t2 = (t0 + 3272);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
@@ -100,7 +100,7 @@ LAB2:    xsi_set_current_line(47, ng0);
 LAB1:    return;
 }
 
-static void Cont_48_1(char *t0)
+static void Cont_28_1(char *t0)
 {
     char t5[8];
     char *t1;
@@ -136,7 +136,7 @@ LAB0:    t1 = (t0 + 4440U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(48, ng0);
+LAB2:    xsi_set_current_line(28, ng0);
     t2 = (t0 + 3272);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
@@ -174,7 +174,7 @@ LAB2:    xsi_set_current_line(48, ng0);
 LAB1:    return;
 }
 
-static void Always_50_2(char *t0)
+static void Always_30_2(char *t0)
 {
     char t6[8];
     char t30[8];
@@ -233,7 +233,7 @@ LAB0:    t1 = (t0 + 4688U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(50, ng0);
+LAB2:    xsi_set_current_line(30, ng0);
     t2 = (t0 + 5288);
     *((int *)t2) = 1;
     t3 = (t0 + 4720);
@@ -241,9 +241,9 @@ LAB2:    xsi_set_current_line(50, ng0);
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(50, ng0);
+LAB4:    xsi_set_current_line(30, ng0);
 
-LAB5:    xsi_set_current_line(51, ng0);
+LAB5:    xsi_set_current_line(31, ng0);
     t4 = (t0 + 2552U);
     t5 = *((char **)t4);
     t4 = ((char*)((ng1)));
@@ -287,7 +287,7 @@ LAB8:    t21 = (t6 + 4);
     *((unsigned int *)t21) = 1;
     goto LAB9;
 
-LAB10:    xsi_set_current_line(52, ng0);
+LAB10:    xsi_set_current_line(32, ng0);
     t28 = (t0 + 2392U);
     t29 = *((char **)t28);
     t28 = (t0 + 3272);
@@ -321,10 +321,10 @@ LAB13:    t46 = *((unsigned int *)t30);
 
 }
 
-static void Initial_57_3(char *t0)
+static void Initial_35_3(char *t0)
 {
 
-LAB0:    xsi_set_current_line(57, ng0);
+LAB0:    xsi_set_current_line(35, ng0);
 
 LAB2:
 LAB1:    return;
@@ -333,7 +333,7 @@ LAB1:    return;
 
 extern void work_m_00000000003187051034_0454122243_init()
 {
-	static char *pe[] = {(void *)Cont_47_0,(void *)Cont_48_1,(void *)Always_50_2,(void *)Initial_57_3};
+	static char *pe[] = {(void *)Cont_27_0,(void *)Cont_28_1,(void *)Always_30_2,(void *)Initial_35_3};
 	xsi_register_didat("work_m_00000000003187051034_0454122243", "isim/TestBench_isim_beh.exe.sim/work/m_00000000003187051034_0454122243.didat");
 	xsi_register_executes(pe);
 }
