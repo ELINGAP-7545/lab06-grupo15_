@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-05-14T17:39:02</DateModified>
+  <DateModified>2020-05-14T17:47:19</DateModified>
   <ModuleName>BancoRegistro</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro/iseconfig/BancoRegistro.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro</ImplementationReportsDirectory>
-  <DateInitialized>2020-05-14T16:56:30</DateInitialized>
+  <SavedFilePath>D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/iseconfig/BancoRegistro.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro\</ImplementationReportsDirectory>
+  <DateInitialized>2020-05-11T21:10:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

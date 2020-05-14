@@ -1,4 +1,4 @@
-module BancoRegistro #(      		 //   #( Parametros
+module BancoRegistro #(      		 //   Parametros
          parameter BIT_ADDR = 2,  //   BIT_ADDR Numero de bit para la direccion
          parameter BIT_DATO = 4,  //  BIT_DATO  Numero de bit para el dato
 			parameter   RegFILE= "srcReg16.men")
@@ -34,11 +34,10 @@ always @(posedge clk) begin
 
 initial begin
 //	$readmemh(RegFILE, breg);
-
-	breg[0] <=10;
-	breg[1] <=2;
-	breg[2] <=5;
-	breg[3] <=1;
+	breg[0] <=10; //precarga de banco
+	breg[1] <=2; //precarga de banco
+	breg[2] <=5; //precarga de banco
+	breg[3] <=1; //precarga de banco
 
 end
 

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/QUARTUS/GitHub/lab06-grupo15_/src/BancoRegistro/BancoRegistro.v";
+static const char *ng0 = "D:/QUARTUS/lab06-grupo15_ - copia/src/BancoRegistro/BancoRegistro.v";
 static int ng1[] = {1, 0};
 static int ng2[] = {10, 0};
 static int ng3[] = {0, 0};
@@ -353,7 +353,7 @@ static void Initial_35_3(char *t0)
 
 LAB0:    xsi_set_current_line(35, ng0);
 
-LAB2:    xsi_set_current_line(38, ng0);
+LAB2:    xsi_set_current_line(37, ng0);
     t1 = ((char*)((ng2)));
     t2 = (t0 + 3272);
     t5 = (t0 + 3272);
@@ -374,7 +374,7 @@ LAB2:    xsi_set_current_line(38, ng0);
     if (t18 == 1)
         goto LAB3;
 
-LAB4:    xsi_set_current_line(39, ng0);
+LAB4:    xsi_set_current_line(38, ng0);
     t1 = ((char*)((ng4)));
     t2 = (t0 + 3272);
     t5 = (t0 + 3272);
@@ -395,7 +395,7 @@ LAB4:    xsi_set_current_line(39, ng0);
     if (t18 == 1)
         goto LAB5;
 
-LAB6:    xsi_set_current_line(40, ng0);
+LAB6:    xsi_set_current_line(39, ng0);
     t1 = ((char*)((ng5)));
     t2 = (t0 + 3272);
     t5 = (t0 + 3272);
@@ -416,7 +416,7 @@ LAB6:    xsi_set_current_line(40, ng0);
     if (t18 == 1)
         goto LAB7;
 
-LAB8:    xsi_set_current_line(41, ng0);
+LAB8:    xsi_set_current_line(40, ng0);
     t1 = ((char*)((ng1)));
     t2 = (t0 + 3272);
     t5 = (t0 + 3272);
