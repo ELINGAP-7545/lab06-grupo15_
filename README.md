@@ -32,6 +32,17 @@ Una vez clone el repositorio, realice lo siguiente:
 
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/tb_ban_reg.JPG)
 
+## LabsLand
+
+Respresetacion en labsland con lectura de un registro
+
+
+![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
+
+Respresentacion laboratorio remoto en FPGA de LabsLand con lectura de dos registros
+
+![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
+
 
 ## Descipción 
 Se debe diseñar un banco de registro tal que:
