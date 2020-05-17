@@ -41,7 +41,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ## Verificación funcionamiento Banco de memoria:
 
-* Con el V_SW 0 y 1 seleccionamos el número de registro a utilizar.
+* Con el V_SW 0 y 1 seleccionamos el número de registro a usar.
 
   * 00 - Reg0 |
 
