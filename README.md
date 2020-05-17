@@ -30,7 +30,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ## Bloque Banco de Registro
 
-	**Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
+	** Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
 
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/schema_ban_reg.JPG)
 
