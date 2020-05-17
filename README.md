@@ -30,7 +30,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ## Bloque Banco de Registro
 
-	** Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
+	**Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
 
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/schema_ban_reg.JPG)
 
@@ -69,11 +69,11 @@ Verificación funcionamiento Banco de memoria:
 * El V_BT 2 
 
 
-Lectura con dato en un registro.
+	**Lectura con dato en un registro.
 
 ![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
 
-Lectura con dato en dos registros.
+	**Lectura con dato en dos registros.
 
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
