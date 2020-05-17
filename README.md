@@ -1,6 +1,6 @@
 ﻿# lab06 Diseño de banco de Registro
 
-# INTEGRANTES:
+# Integrantes:
 **Arley Stiven Rodriguez 60335;**
 
 **Cesar Eduardo Martinez 63810;**
