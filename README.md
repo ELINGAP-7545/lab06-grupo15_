@@ -43,14 +43,14 @@ Verificación funcionamiento Banco de memoria:
 
 * Con el V_SW 0 y 1 seleccionamos el número de registro a utilizar.
 
-	00 - Reg0
-	01 - Reg1
-	10 - Reg2
-	11 - Reg3
+00 - Reg0
+01 - Reg1
+10 - Reg2
+11 - Reg3
 
 * Con el V_SW 2, 3, 4 y 5 ingresamos el dato.
 
-	0000 hasta 1111
+0000 hasta 1111
 
 * Con los V_SW 6 y 7 seleccionamos el registro que se quiere visualizar
   en el primer display. 
