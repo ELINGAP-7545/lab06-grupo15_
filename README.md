@@ -78,7 +78,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 * El V_BT 0 corresponde al reset.
 
-* El V_BT 1 carga dato en el registro seleccionado.
+* El V_BT 1 carga dato en el registro seleccionado inicialmente.
 
 ## Implementación en LabsLand
 
@@ -86,7 +86,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
 
-	**Lectura con dato en dos registros.
+	**Lectura con datos en display 1 y 2.
 
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
