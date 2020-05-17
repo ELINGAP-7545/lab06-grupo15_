@@ -69,11 +69,11 @@ Verificación funcionamiento Banco de memoria:
 * El V_BT 2 
 
 
-** Lectura con dato en un registro.
+Lectura con dato en un registro.
 
 ![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
 
-** Lectura con dato en dos registros.
+Lectura con dato en dos registros.
 
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
