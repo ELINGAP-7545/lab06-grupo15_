@@ -46,7 +46,9 @@ Verificación funcionamiento Banco de memoria:
 00 - Reg0 |
 
 01 - Reg1 |
+
 10 - Reg2 |
+
 11 - Reg3 |
 
 * Con el V_SW 2, 3, 4 y 5 ingresamos el dato.
