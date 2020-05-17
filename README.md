@@ -7,22 +7,19 @@
 
 **Juan Camilo Arévalo Garzón 63572**
 
-## Descipción 
+## Descripción 
 Se debe diseñar un banco de registro tal que:
 
 * El banco de registro debe tener 16 registros de R/W.
-* Permitir la lectura de 2 registros  simultáneamente 
-* Permitir la escritura  de 1 registro, acorde a la señal de control regwrite
+* Permitir la lectura de 2 registros  simultáneamente. 
+* Permitir la escritura  de 1 registro, acorde a la señal de control regwrite.
 * Contar con señal de rst, la cual  ponga  todos los registros en un valor conocido.
 * Visualizar la información, en al menos dos display de 7 segmentos (información de cada registro leído).
 * El ingreso de la información se debe hacer por medio de los interruptores.
-
 ![cn](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab07-BancosRgistro/doc/caja%20negra.png)
-
 ![caja](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab07-BancosRgistro/doc/banco%20registro.png)
 
-## Desarrollo del laboratorio:
-
+## Desarrollo del laboratorio
 
 # Introducción
 
@@ -31,9 +28,7 @@ ser seleccionados mediante una señal de control para ser leídos o escritos.
 Asimismo, el banco de registros puede tener varios puertos de salida y varios de entrada,
 permitiendo de esta forma la lectura o la escritura simultánea de varios registros.
 
-
 ## Bloque Banco de Registro
-
 
 	**Diagrama estructural Banco de Registro de 4 posiciones de 16 bits
 
@@ -43,14 +38,39 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/tb_ban_reg.JPG)
 
-## LabsLand
+## Implementación en LabsLand
+#Verificación funcionamiento Banco de memoria:
 
-Respresetacion en labsland con lectura de un registro
+* Con el V_SW 0 y 1 seleccionamos el número de registro a utilizar.
 
+	00 - Reg0
+	01 - Reg1
+	10 - Reg2
+	11 - Reg3
+
+* Con el V_SW 2, 3, 4 y 5 ingresamos el dato.
+
+	0000 hasta 1111
+
+* Con los V_SW 6 y 7 seleccionamos el registro que se quiere visualizar
+  en el primer display. 
+
+* Con los V_SW 8 y 9 seleccionamos el registro que se quiere visualizar
+  en el segundo display.
+
+
+* El V_BT 0 corresponde al reset.
+
+* El V_BT 1 carga dato en el registro seleccionado.
+
+* El V_BT 2 
+
+
+* Lectura con dato en un registro.
 
 ![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
 
-Respresentacion laboratorio remoto en FPGA de LabsLand con lectura de dos registros
+* Lectura con dato en dos registros.
 
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
