@@ -38,8 +38,8 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 ![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/tb_ban_reg.JPG)
 
-## Implementación en LabsLand
-Verificación funcionamiento Banco de memoria:
+
+## Verificación funcionamiento Banco de memoria:
 
 * Con el V_SW 0 y 1 seleccionamos el número de registro a utilizar.
 
@@ -80,7 +80,7 @@ Verificación funcionamiento Banco de memoria:
 
 * El V_BT 1 carga dato en el registro seleccionado.
 
-
+## Implementación en LabsLand
 
 	**Lectura con dato = 2, en registro 2, en display 2 .
 
