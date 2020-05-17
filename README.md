@@ -91,7 +91,6 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
 
-
 #
 **Opcional. Da mas puntos:**
 * Parametrizar el tamaño de palabra de cada registro  y la cantidad de registro ( Por defecto =4 bits). Se recomienda leer el documento de este [link](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-884-complex-digital-systems-spring-2005/related-resources/parameter_models.pdf) .
