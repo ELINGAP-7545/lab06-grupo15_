@@ -57,24 +57,24 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 * Con los V_SW 6 y 7 seleccionamos el primer display para visualizar dato. 
 
-  * 00 - R/W ??|
+  * 00 - |
 
-  * 01 - W/R ??| w
+  * 01 - | 
 
-  * 10 - R/W ??|
+  * 10 - |
 
-  * 11 - W/R ??|
+  * 11 - |
 
 
 * Con los V_SW 8 y 9 seleccionamos el segundo display para visualizar dato.
 
-  * 00 - R/W ??|
+  * 00 - |
 
-  * 01 - W/R ??|
+  * 01 - |
 
-  * 10 - R/W ??|
+  * 10 - |
 
-  * 11 - W/R ??|
+  * 11 - |
 
 * El V_BT 0 corresponde al reset.
 
