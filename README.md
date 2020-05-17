@@ -58,15 +58,29 @@ Verificación funcionamiento Banco de memoria:
 * Con los V_SW 6 y 7 seleccionamos el registro que se quiere visualizar
   en el primer display. 
 
+  * 00 - R/W ??|
+
+  * 01 - W/R ??|
+
+  * 10 - R/W ??|
+
+  * 11 - W/R ??|
+
+
 * Con los V_SW 8 y 9 seleccionamos el registro que se quiere visualizar
   en el segundo display.
 
+  * 00 - R/W ??|
+
+  * 01 - W/R ??|
+
+  * 10 - R/W ??|
+
+  * 11 - W/R ??|
 
 * El V_BT 0 corresponde al reset.
 
 * El V_BT 1 carga dato en el registro seleccionado.
-
-* El V_BT 2 
 
 
 
