@@ -88,6 +88,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
 	**Lectura con datos en display 1 y 2.
 
+![SIMULACION_SUM](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 ![LABsland_l](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland2.JPG)
 
 
