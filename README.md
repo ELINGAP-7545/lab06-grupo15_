@@ -69,6 +69,7 @@ Verificación funcionamiento Banco de memoria:
 * El V_BT 2 
 
 
+
 	**Lectura con dato en un registro.
 
 ![SIMULACION_LAB](https://github.com/ELINGAP-7545/lab06-grupo15_/blob/master/images/Labsland.JPG)
