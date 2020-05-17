@@ -55,8 +55,7 @@ Verificación funcionamiento Banco de memoria:
 
   * 0000 hasta 1111
 
-* Con los V_SW 6 y 7 seleccionamos el registro que se quiere visualizar
-  en el primer display. 
+* Con los V_SW 6 y 7 seleccionamos el primer display para visualizar dato. 
 
   * 00 - R/W ??|
 
@@ -67,8 +66,7 @@ Verificación funcionamiento Banco de memoria:
   * 11 - W/R ??|
 
 
-* Con los V_SW 8 y 9 seleccionamos el registro que se quiere visualizar
-  en el segundo display.
+* Con los V_SW 8 y 9 seleccionamos el segundo display para visualizar dato.
 
   * 00 - R/W ??|
 
