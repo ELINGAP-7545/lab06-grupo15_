@@ -1,11 +1,11 @@
 ﻿# lab06 Diseño de banco de Registro
 
 # Integrantes:
-**Arley Stiven Rodriguez 60335;**
+**Arley Stiven Rodriguez 60335**
 
-**Cesar Eduardo Martinez 63810;**
+**Cesar Eduardo Martinez 63810**
 
-**Juan Camilo Arévalo Garzón 63572;**
+**Juan Camilo Arévalo Garzón 63572**
 
 
 # Introducción
