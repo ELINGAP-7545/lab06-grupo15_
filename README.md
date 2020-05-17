@@ -55,26 +55,27 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
   * 0000 hasta 1111
 
-* Con los V_SW 6 y 7 seleccionamos el primer display para visualizar dato. 
+* Con los V_SW 6 y 7 seleccionamos el primer display para visualizar dato en registro correspondiente. 
 
-  * 00 - |
+  * 00 - Reg0 |
 
-  * 01 - | 
+  * 01 - Reg1 |
 
-  * 10 - |
+  * 10 - Reg2 |
 
-  * 11 - |
+  * 11 - Reg3 |
 
 
-* Con los V_SW 8 y 9 seleccionamos el segundo display para visualizar dato.
+* Con los V_SW 8 y 9 seleccionamos el segundo display para visualizar dato en registro correspondiente.
 
-  * 00 - |
+  * 00 - Reg0 |
 
-  * 01 - |
+  * 01 - Reg1 |
 
-  * 10 - |
+  * 10 - Reg2 |
 
-  * 11 - |
+  * 11 - Reg3 |
+
 
 * El V_BT 0 corresponde al reset.
 
