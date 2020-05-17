@@ -59,7 +59,7 @@ permitiendo de esta forma la lectura o la escritura simultánea de varios regist
 
   * 00 - R/W ??|
 
-  * 01 - W/R ??|
+  * 01 - W/R ??| w
 
   * 10 - R/W ??|
 
